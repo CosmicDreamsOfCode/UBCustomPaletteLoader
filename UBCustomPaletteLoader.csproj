@@ -1,0 +1,629 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>UBCustomPaletteLoader</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>UBCustomPaletteLoader</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="AllIn1VfxAssmebly">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\AllIn1VfxAssmebly.dll</HintPath>
+		</Reference>
+		<Reference Include="AllIn1VfxDemoScriptAssemblies">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\AllIn1VfxDemoScriptAssemblies.dll</HintPath>
+		</Reference>
+		<Reference Include="AmplifyShaderEditor.Samples.BuiltIn">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\AmplifyShaderEditor.Samples.BuiltIn.dll</HintPath>
+		</Reference>
+		<Reference Include="Antlr4.Runtime.Standard">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Antlr4.Runtime.Standard.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Cinemachine">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Cinemachine.dll</HintPath>
+		</Reference>
+		<Reference Include="Coffee.UnmaskForUGUI">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Coffee.UnmaskForUGUI.dll</HintPath>
+		</Reference>
+		<Reference Include="CommandsInAnAssemblyDefinition">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\CommandsInAnAssemblyDefinition.dll</HintPath>
+		</Reference>
+		<Reference Include="CsvHelper">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\CsvHelper.dll</HintPath>
+		</Reference>
+		<Reference Include="DOTween">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\DOTween.dll</HintPath>
+		</Reference>
+		<Reference Include="Dreamteck.Splines">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Dreamteck.Splines.dll</HintPath>
+		</Reference>
+		<Reference Include="Dreamteck.Utilities">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Dreamteck.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="Facepunch.Steamworks.Win64">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Facepunch.Steamworks.Win64.dll</HintPath>
+		</Reference>
+		<Reference Include="FMODUnity">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\FMODUnity.dll</HintPath>
+		</Reference>
+		<Reference Include="FMODUnityResonance">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\FMODUnityResonance.dll</HintPath>
+		</Reference>
+		<Reference Include="Gemserk.SelectionHistory">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Gemserk.SelectionHistory.dll</HintPath>
+		</Reference>
+		<Reference Include="Google.Protobuf">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Google.Protobuf.dll</HintPath>
+		</Reference>
+		<Reference Include="Lattice.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Lattice.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Microsoft.CSharp">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Microsoft.CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="MPUIKit">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\MPUIKit.dll</HintPath>
+		</Reference>
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="PlayMaker">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\PlayMaker.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Core">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Rewired_Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Rewired_Windows">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Rewired_Windows.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.OdinInspector.Attributes">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Sirenix.OdinInspector.Attributes.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.OdinInspector.Modules.Unity.Addressables">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Sirenix.OdinInspector.Modules.Unity.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.OdinInspector.Modules.UnityLocalization">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Sirenix.OdinInspector.Modules.UnityLocalization.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Serialization.Config">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Sirenix.Serialization.Config.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Serialization">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Sirenix.Serialization.dll</HintPath>
+		</Reference>
+		<Reference Include="Sirenix.Utilities">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Sirenix.Utilities.dll</HintPath>
+		</Reference>
+		<Reference Include="UIEffect">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UIEffect.dll</HintPath>
+		</Reference>
+		<Reference Include="UModelerCommon">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UModelerCommon.dll</HintPath>
+		</Reference>
+		<Reference Include="UniTask.Addressables">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UniTask.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="UniTask">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UniTask.dll</HintPath>
+		</Reference>
+		<Reference Include="UniTask.DOTween">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UniTask.DOTween.dll</HintPath>
+		</Reference>
+		<Reference Include="UniTask.Linq">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UniTask.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="UniTask.TextMeshPro">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UniTask.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.Animation.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.2D.Animation.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.Common.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.2D.Common.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.IK.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.2D.IK.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Addressables">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Animation.Rigging">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Animation.Rigging.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Animation.Rigging.DocCodeExamples">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Animation.Rigging.DocCodeExamples.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections.LowLevel.ILSupport">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InternalAPIEngineBridge.001">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InternalAPIEngineBridge.004">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.InternalAPIEngineBridge.004.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.InternalAPIEngineBridge.013">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.InternalAPIEngineBridge.013.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Localization">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Localization.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.MemoryProfiler">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.MemoryProfiler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Multiplayer.Center.Common">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Multiplayer.Center.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Postprocessing.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Csg">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ProBuilder.Csg.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ProBuilder.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.KdTree">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ProBuilder.KdTree.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Poly2Tri">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ProBuilder.Stl">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ProBuilder.Stl.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Profiling.Core">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Profiling.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Recorder.Base">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Recorder.Base.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Recorder">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Recorder.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime.Shared">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.RenderPipelines.Core.Runtime.Shared.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.GPUDriven.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.RenderPipelines.GPUDriven.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ResourceManager">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ResourceManager.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ScriptableBuildPipeline">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.ScriptableBuildPipeline.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Apis">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Apis.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Authentication">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Authentication.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Authentication.PlayerAccounts">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Authentication.PlayerAccounts.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.CloudSave">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.CloudSave.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Analytics">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Analytics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Components">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Components.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Configuration">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Device">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Device.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Environments.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments.Internal">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Environments.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Internal">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Networking">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Networking.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Registration">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Registration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Scheduler">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Scheduler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Telemetry">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Telemetry.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Threading">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Core.Threading.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Leaderboards">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Services.Leaderboards.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Splines">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Splines.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TerrainTools">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.TerrainTools.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.UnifiedRayTracing.Runtime">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\Unity.UnifiedRayTracing.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AdaptivePerformanceModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AdaptivePerformanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AMDModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AMDModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterInputModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClusterRendererModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GraphicsStateCollectionSerializerModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.GraphicsStateCollectionSerializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HierarchyCoreModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.HierarchyCoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HierarchyModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.HierarchyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IdentifiersModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.IdentifiersModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputForUIModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.InputForUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InsightsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.InsightsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.MarshallingModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.MarshallingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.MultiplayerModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.MultiplayerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.NVIDIAModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.NVIDIAModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsBackendPhysXModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.PhysicsBackendPhysXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RenderAs2DModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.RenderAs2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ShaderRuntimeModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ShaderRuntimeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ShaderVariantAnalyticsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.ShaderVariantAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpatialTracking">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.SpatialTracking.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConsentModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityConsentModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VectorGraphicsModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.VectorGraphicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VirtualTexturingModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XR.LegacyInputHelpers">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityMainThreadDispatcher">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\UnityMainThreadDispatcher.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Memory">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Memory.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Nature">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Nature.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Packages">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Packages.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Pooling">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Pooling.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Rendering">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Rendering.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Rendering.Instancing">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Rendering.Instancing.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Rendering.Nature">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Rendering.Nature.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.ShaderX">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.ShaderX.dll</HintPath>
+		</Reference>
+		<Reference Include="VisualDesignCafe.Threading">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\VisualDesignCafe.Threading.dll</HintPath>
+		</Reference>
+		<Reference Include="XNode">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\XNode.dll</HintPath>
+		</Reference>
+		<Reference Include="XNodeOdin">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\XNodeOdin.dll</HintPath>
+		</Reference>
+		<Reference Include="YarnSpinner.Compiler">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\YarnSpinner.Compiler.dll</HintPath>
+		</Reference>
+		<Reference Include="YarnSpinner">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\YarnSpinner.dll</HintPath>
+		</Reference>
+		<Reference Include="YarnSpinner.Unity">
+			<HintPath>$(GamePath)/UNBEATABLE_Data\Managed\YarnSpinner.Unity.dll</HintPath>
+		</Reference>
+		<Reference Include="MelonLoader">
+			<HintPath>$(GamePath)/MelonLoader\net35\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>$(GamePath)/MelonLoader\net35\0Harmony.dll</HintPath>
+		</Reference>
+
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="Core.cs" />
+		<Content Include="Directory.Build.props" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.Drawing.Common" Version="10.0.5" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;$(GamePath)/Mods&quot;" />
+	</Target>
+</Project>
